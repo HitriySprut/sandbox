@@ -1,12 +1,7 @@
-package ksenia.other;
-
 import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.jsoup.select.NodeFilter;
-
-import java.io.File;
 
 public class Solution
 {
