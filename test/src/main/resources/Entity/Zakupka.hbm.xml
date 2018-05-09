@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Entity.Zakupka" table="zakupka" catalog="test">
+        <id name="Id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="description" type="string">
+            <column name="description" length="20" not-null="true" unique="true" />
+        </property>
+        <property name="cond" type="string">
+            <column name="cond" length="20" not-null="true" unique="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -2,6 +2,7 @@ import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.hibernate.annotations.Table;
 
 import java.io.IOException;
 import java.sql.*;
@@ -35,8 +36,6 @@ public class Solution
     }
 
     private static void saveToDB(String name, String value) throws SQLException, ClassNotFoundException {
-
-
         java.sql.Connection conn = null;
         Statement stmt = null;
         Class.forName("com.mysql.jdbc.Driver");
@@ -145,4 +144,5 @@ public class Solution
 
 
     }
+
 }
